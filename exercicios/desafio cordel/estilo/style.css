@@ -6,12 +6,12 @@
 
 
 
-
+/*
 :root{
     --fonte1: Verdana, Tahoma, Sans-serif;
-    --fonte2:'Passion One', 
-}
-
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+*/
 *{
     margin: 0px;
     padding: 0px;
@@ -20,6 +20,7 @@
 html, body{
     background-color: darkgray;
     min-width: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -31,35 +32,43 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw;
 }
+
 header > p{
     padding-bottom: 50px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2em;
 }
 
 section.normal{
     background-color: white;
     color: black;
 }
+
 section.imagem{
     background-color: rgb(51, 46, 46);
     color: white;
 }
+
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.397);
     width: 400px;
 }
-section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-}
-
 a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
+
 a:hover{
     text-decoration: underline;
 }
