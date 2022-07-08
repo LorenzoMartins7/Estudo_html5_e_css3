@@ -9,6 +9,9 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
         table{
             width: 500px;
         }
@@ -47,7 +50,7 @@
         <thead>
             <tr>
                 <th scope="col">estado</th>
-                <th scope="col">populaçao</th>
+                <th scope="col" style="width: 50px;">populaçao</th>
             </tr>
         </thead>
         <tbody>
@@ -66,8 +69,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
-                <td>0000</td>
+                <th scope="row">total de habitantes</th>
+                <td class="num">0000</td>
             </tr>
         </tfoot>
     </table>
